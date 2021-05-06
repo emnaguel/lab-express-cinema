@@ -1,0 +1,13 @@
+<div class="container mt-2">
+    <h1>Ironhack Cinema</h1>
+    <p>Click on the movies to check the showtimes!</p>
+    <div class="d-flex flex-wrap justify-content-center">
+    {{#each movies}}
+        <div class="card border-none m-5">
+            <img class="movies-images" src="{{this.image}}" alt="{{this.title}}">
+            <p class="text-center mt-2"><b>{{this.title}}</b></p>
+            <a href="/movies/{{this._id}}" class="text-center">See more</a>
+        </div>
+    {{/each}}
+    </div>
+</div>

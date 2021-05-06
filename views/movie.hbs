@@ -1,0 +1,29 @@
+<div class="container mt-2">
+    <div class='row align-items-center'>
+        <div class='image-container '>
+        <img class="movie-image" src="{{movie.image}}" alt="{{movie.title}}">
+        </div>
+
+        <div class='presentation-container'>
+        <div class=''>
+            <div class="d-flex flex-column">
+                <a href="/movies">Go Back</a>
+                <br>
+                <h3>{{movie.title}}</h3>
+                <h5>Director: {{movie.director}}</h5>
+                <h6>Stars</h6>
+                {{#each movie.stars}}
+                    <li>{{this}}</li>
+                {{/each}}
+                <p>{{movie.description}}</p>
+                <div class="d-flex">
+                    {{#each movie.showtimes}}
+                        <p>{{this}} |</p>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
