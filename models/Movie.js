@@ -10,5 +10,5 @@ const movieSchema = new Schema({
   showtimes: Array,
 });
 
-const MovieModel = mongoose.model("cats", movieSchema);
+const MovieModel = mongoose.model("movies", movieSchema);
 module.exports = MovieModel;
